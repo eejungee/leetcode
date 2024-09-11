@@ -4,7 +4,6 @@
  */
 var interpret = function(command) {
     let result = []
-    console.log(command.length)
     for(let i=0; i<command.length; i++) {
         if(command[i] === "G") {
             result.push(command[i])
