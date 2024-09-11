@@ -8,7 +8,8 @@ var maxWidthOfVerticalArea = function(points) {
     for(let i=0; i<points.length; i++) {
         x.push(points[i][0])
     }
-    x = [...new Set(x.sort())];
+    x = [...new Set(x)];
+    x.sort((a,b) => a-b)
     for(let j=0; j<x.length; j++) {
         let minus = x[j+1]-x[j]
         if(minus > result){
